@@ -1,0 +1,239 @@
+:root {
+  --beige: #cfb79d;
+  --brown: #a48374;
+  --dark-brown: #3D2B1F;
+}
+
+@font-face {
+  font-family: f-r;
+  src: url("../fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+  font-family: f-b;
+  src: url("../fonts/Inter-Bold.ttf");
+}
+
+@font-face {
+  font-family: f-m;
+  src: url("../fonts/Inter-Medium.ttf");
+}
+
+@font-face {
+  font-family: n-m;
+  src: url("../fonts/NotoSerif-Medium.ttf");
+}
+
+@keyframes logo-hovers {
+  from {
+    background-image: linear-gradient(to right, white 50%, brown 50%);
+    /* Initially, set the gradient to be white on the left and brown on the right */
+  }
+
+  to {
+    background-image: linear-gradient(to right, brown 50%, white 50%);
+    /* Transition to brown on the left and white on the right */
+  }
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: f-r;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  /* background-color: var(--brown); */
+  background: linear-gradient(60deg, #c7a380, #bd9686);
+  align-items: center;
+}
+
+header .header-div {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header .header-div .logo {
+  font-family: f-b;
+  font-size: 30px;
+  text-decoration: none;
+  background: white;
+  background-clip: text;
+  color: transparent;
+  transition: background-position 500ms ease, color 500ms ease;
+}
+
+header .header-div .logo:hover {
+  background-position: 100% 0;
+  color: var(--dark-brown);
+}
+
+header .header-div .nav {
+  font-family: f-m;
+  font-size: 15px;
+  align-items: center;
+  display: flex;
+}
+
+header .header-div .nav a {
+  text-decoration: none;
+  color: white;
+  transition: 300ms;
+}
+
+header .header-div .nav :first-child {
+  margin-right: 50px;
+}
+
+header .header-div .nav a:hover {
+  color: var(--dark-brown);
+}
+
+.hero {
+  height: 90vh;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url("../images/brown_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero .slogan {
+  font-family: n-m;
+  font-size: 60px;
+  color: var(--dark-brown);
+  margin-bottom: 30px;
+}
+
+.hero .learn-button {
+  font-family: f-r;
+  text-decoration: none;
+  background-color: #3D2B1F;
+  border-radius: 20px;
+  color: white;
+  transition: 300ms;
+  padding: 10px 40px 10px 40px;
+}
+
+.hero .learn-button:hover {
+  padding: 10px 45px 10px 45px;
+  transition: 300ms;
+}
+
+.supp-details {
+  display: flex;
+  justify-content: center;
+  height: 40vh;
+}
+
+.details {
+  /* width: 80%; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.supp-img {
+  height: 100%;
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.supp-img:first-child {
+  background-image: url("../images/supp-img1.jpg");
+}
+
+.supp-img {
+  background-image: url("../images/supp-img2.jpg");
+}
+
+.supp-text {
+  display: flex;
+  font-size: 18px;
+  line-height: 30px;
+  width: 50%;
+  align-items: center;
+  color: white;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.supp-text:first-child {
+  justify-content: start;
+}
+
+.supp-details .end {
+  justify-content: end;
+}
+
+.supp-text p {
+  width: 70%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
+footer {
+  width: 100%;
+  height: 20vh;
+  background: var(--dark-brown);
+  display: flex;
+  justify-content: center;
+}
+
+footer .ftr-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+footer .ftr-logo span {
+  font-size: 70px;
+  font-family: f-b;
+  color: white;
+}
+
+footer .contacts {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: white;
+  width: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+
+  header .header-div {
+    width: 80%;
+  }
+
+  .hero .slogan {
+    font-size: 30px;
+  }
+
+  header .header-div .nav :first-child {
+    margin-right: 20px;
+  }
+
+  .details {
+    width: 100%;
+  }
+
+  .supp-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
