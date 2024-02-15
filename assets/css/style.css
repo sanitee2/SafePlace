@@ -48,7 +48,6 @@ header {
   height: 60px;
   display: flex;
   justify-content: center;
-  /* background-color: var(--brown); */
   background: linear-gradient(60deg, #c7a380, #bd9686);
   align-items: center;
 }
@@ -214,6 +213,11 @@ footer .contacts {
   width: 50%;
 }
 
+footer .contacts .cont-item .title-cont {
+  font-size: 25px;
+  font-family: f-b;
+}
+
 @media screen and (max-width: 1200px) {
 
   header .header-div {
@@ -235,5 +239,47 @@ footer .contacts {
   .supp-text {
     font-size: 14px;
     line-height: 20px;
+  }
+
+  footer .ftr-logo span {
+    font-size: 40px;
+  }
+
+  footer .contacts .cont-item .title-cont {
+    font-size: 18px;
+  }
+
+  footer .contacts .cont-item span {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .supp-text {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .supp-text p {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+
+  }
+
+  .supp-text {
+    line-height: 15px;
+  }
+
+  footer .ftr-logo span {
+    font-size: 35px;
+  }
+
+  footer .contacts .cont-item .title-cont {
+    font-size: 14px;
+  }
+
+  footer .contacts .cont-item span {
+    font-size: 12px;
   }
 }
