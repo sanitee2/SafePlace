@@ -14,7 +14,17 @@
 
 .list-doc .list-doc-cont .list-doc-title {
   font-size: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   font-family: f-b;
+}
+
+.list-doc .list-doc-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .list-doc .list-doc-cont .card-holder {
