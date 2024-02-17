@@ -1,0 +1,26 @@
+:root {
+  --low-beige: #f1ede8;
+  --beige: #cfb79d;
+  --brown: #a48374;
+  --dark-brown: #3D2B1F;
+}
+
+@font-face {
+  font-family: f-r;
+  src: url("../fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+  font-family: f-b;
+  src: url("../fonts/Inter-Bold.ttf");
+}
+
+@font-face {
+  font-family: f-m;
+  src: url("../fonts/Inter-Medium.ttf");
+}
+
+@font-face {
+  font-family: n-m;
+  src: url("../fonts/NotoSerif-Medium.ttf");
+}

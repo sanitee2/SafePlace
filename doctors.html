@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafeSpace | List of Doctors</title>
+  <link rel="stylesheet" href="assets/css/variable.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/doctor.css">
+  <link rel="stylesheet" href="assets/css/modal.css">
+</head>
+
+
+
+<body>
+  <header>
+    <div class="header-div">
+      <a class="logo" href="#">
+        SafeSpace
+      </a>
+      <div class="nav">
+        <a href="index.html" class="btn-home">Home</a>
+        <a href="doctors.html" class="btn-doctors">Doctors</a>
+        <a href="plans.html" class="btn-plans">Our Plans</a>
+        <a href="#" class="btn-me">Keeshia <div class="acnt-img"></div></a>
+      </div>
+      <div class="burger-menu" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="list-doc">
+    <div class="list-doc-cont">
+      <span class="list-doc-title">List of Doctors</span>
+      <span>Find the right doctor for you</span>
+      <div class="card-holder">
+        <div class="card">
+          <div class="card-img" id="img1">
+          </div>
+          <span class="name">Dr. James Smith, MD</span>
+          <span class="type">FPPA, DPCAM</span>
+          <a href="#" class="btn-card" onclick="openModal()">Learn more</a>
+        </div>
+        <div class="card">
+          <div class="card-img" id="img2">
+          </div>
+          <span class="name">Dr. Emily Johnson, MD</span>
+          <span class="type">DSBPP </span>
+          <a href="" class="btn-card">Learn more</a>
+        </div>
+        <div class="card">
+          <div class="card-img" id="img3">
+          </div>
+          <span class="name">Dr. Michael Brown, MD</span>
+          <span class="type">MSc, FPPA, FPCPsych</span>
+          <a href="" class="btn-card">Learn more</a>
+        </div>
+        <div class="card">
+          <div class="card-img" id="img4">
+          </div>
+          <span class="name">Dr. Sarah Lee, MD</span>
+          <span class="type">DSBPP, MPM-HSD</span>
+          <a href="" class="btn-card">Learn more</a>
+        </div>
+        <div class="card">
+          <div class="card-img" id="img5">
+          </div>
+          <span class="name">Dr. Farrah Abara, MD</span>
+          <span class="type">DSBPP, MPM-HSD</span>
+          <a href="#" class="btn-card" onclick="openModal()">Learn more</a>
+        </div>
+        <div class="card">
+          <div class="card-img" id="img6">
+          </div>
+          <span class="name">Dr. Harriet Sweeney, MD</span>
+          <span class="type">MSc, FPPA, FPCPsych</span>
+          <a href="" class="btn-card">Learn more</a>
+        </div>
+        <div class="card">
+          <div class="card-img" id="img7">
+          </div>
+          <span class="name">Dr. Richard Scott, MD</span>
+          <span class="type">FPPA, DPCAM</span>
+          <a href="" class="btn-card">Learn more</a>
+        </div>
+        <div class="card">
+          <div class="card-img" id="img8">
+          </div>
+          <span class="name">Dr. Steven Strange, MD</span>
+          <span class="type">DSBPP </span>
+          <a href="" class="btn-card">Learn more</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="modal-container" id="myModal" onclick="closeModal()">
+    <div class="modal-content" onclick="event.stopPropagation();">
+      <h2>Modal Content</h2>
+      <p>This is a simple modal example created using only HTML and CSS.</p>
+      <button class="modal-button" onclick="closeModal()">Close Modal</button>
+    </div>
+  </div>
+
+  <script>
+    function openModal() {
+      document.getElementById('myModal').style.display = 'flex';
+    }
+
+    function closeModal() {
+      document.getElementById('myModal').style.display = 'none';
+    }
+
+    function toggleMenu() {
+      var body = document.querySelector('body');
+      body.classList.toggle('show-nav');
+    }
+  </script>
+
+</body>
+
+</html>

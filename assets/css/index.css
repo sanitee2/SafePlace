@@ -1,0 +1,220 @@
+.hero {
+  height: 90vh;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url("../images/brown_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero .slogan {
+  font-family: n-m;
+  font-size: 60px;
+  color: var(--dark-brown);
+  margin-bottom: 30px;
+}
+
+.hero .learn-button {
+  font-family: f-r;
+  text-decoration: none;
+  background-color: #3D2B1F;
+  border-radius: 20px;
+  color: white;
+  transition: 300ms;
+  padding: 10px 40px 10px 40px;
+}
+
+.hero .learn-button:hover {
+  padding: 10px 45px 10px 45px;
+  transition: 300ms;
+}
+
+.supp-details {
+  display: flex;
+  justify-content: center;
+  height: 40vh;
+}
+
+.details {
+  /* width: 80%; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.supp-img {
+  height: 100%;
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.supp-img:first-child {
+  background-image: url("../images/supp-img1.jpg");
+}
+
+.supp-img {
+  background-image: url("../images/supp-img2.jpg");
+}
+
+.supp-text {
+  display: flex;
+  font-size: 18px;
+  line-height: 30px;
+  width: 50%;
+  align-items: center;
+  color: white;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.supp-text:first-child {
+  justify-content: start;
+}
+
+.supp-details .end {
+  justify-content: end;
+}
+
+.supp-text p {
+  width: 70%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
+footer {
+  width: 100%;
+  height: 20vh;
+  background: var(--dark-brown);
+  display: flex;
+  justify-content: center;
+}
+
+footer .ftr-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+footer .ftr-logo span {
+  font-size: 70px;
+  font-family: f-b;
+  color: white;
+}
+
+footer .contacts {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: white;
+  width: 50%;
+}
+
+footer .contacts .cont-item .title-cont {
+  font-size: 25px;
+  font-family: f-b;
+}
+
+@media screen and (max-width: 1200px) {
+
+  header .header-div {
+    width: 80%;
+  }
+
+  .hero .slogan {
+    font-size: 30px;
+  }
+
+  header .header-div .nav :first-child {
+    margin-right: 20px;
+  }
+
+  .details {
+    width: 100%;
+  }
+
+  .supp-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  footer .ftr-logo span {
+    font-size: 40px;
+  }
+
+  footer .contacts .cont-item .title-cont {
+    font-size: 18px;
+  }
+
+  footer .contacts .cont-item span {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .supp-details {
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+  }
+
+  footer {
+    width: 100%;
+    height: 45vh;
+    background: var(--dark-brown);
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .supp-details {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+  }
+
+  footer {
+    width: 100%;
+    height: 30vh;
+    background: var(--dark-brown);
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .supp-text {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .supp-text p {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+
+  }
+
+  .supp-text {
+    line-height: 15px;
+  }
+
+  footer .ftr-logo span {
+    font-size: 35px;
+  }
+
+  footer .contacts .cont-item .title-cont {
+    font-size: 14px;
+  }
+
+  footer .contacts .cont-item span {
+    font-size: 12px;
+  }
+}

@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SafeSpace | Home</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/variable.css">
+  <link rel="stylesheet" href="assets/css/index.css">
 </head>
 
 <body>
@@ -15,8 +17,15 @@
         SafeSpace
       </a>
       <div class="nav">
-        <a href="index.html">Home</a>
-        <a href="index.html">Our Plans</a>
+        <a href="index.html" class="btn-home">Home</a>
+        <a href="doctors.html" class="btn-doctors">Doctors</a>
+        <a href="plans.html" class="btn-plans">Our Plans</a>
+        <a href="#" class="btn-me">Keeshia <div class="acnt-img"></div></a>
+      </div>
+      <div class="burger-menu" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
     </div>
   </header>
@@ -64,10 +73,8 @@
     </div>
     <div class="contacts">
       <div class="cont-item">
+        <span>Have questions or concerns?</span><br><br>
         <span class="title-cont">Contact Us</span><br>
-        <span>Have questions or concerns?</span>
-        <br>
-        <br>
         <span>Phone: 09728302738</span>
         <br>
         <span>Email: 09728302738</span>
@@ -77,6 +84,13 @@
     </div>
 
   </footer>
+
+  <script>
+    function toggleMenu() {
+      var body = document.querySelector('body');
+      body.classList.toggle('show-nav');
+    }
+  </script>
 
 </body>
 
